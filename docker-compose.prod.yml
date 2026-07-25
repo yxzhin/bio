@@ -6,19 +6,6 @@ services:
       - internal
       - proxy
 
-  caddy:
-    image: caddy:latest
-    restart: unless-stopped
-    volumes:
-      - caddy_data:/data
-      - caddy_config:/config
-    depends_on:
-      - bio-frontend
-
-volumes:
-  caddy_data:
-  caddy_config:
-
 networks:
   internal:
   proxy:
