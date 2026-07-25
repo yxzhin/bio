@@ -1,6 +1,6 @@
 services:
   bio-frontend:
-    image: ghcr.io/yxzhin/bio:latest
+    image: yxzhin/bio:latest
     restart: unless-stopped
     networks:
       - internal
