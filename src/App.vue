@@ -1,14 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AvatarImage from "./components/AvatarImage.vue"
+import HeadText from "./components/HeadText.vue"
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit
-    <a href="https://vuejs.org/" target="_blank" rel="noopener"
-      >vuejs.org</a
+  <div class="flex w-full justify-center p-16">
+    <div
+      class="max-w-2xl rounded-2xl bg-container shadow-xl p-8 text-center"
     >
-    to read the documentation
-  </p>
+      <AvatarImage></AvatarImage>
+      <HeadText></HeadText>
+    </div>
+  </div>
 </template>
 
-<style scoped></style>
+<style>
+body {
+  background-color: var(--color-background);
+}
+</style>
